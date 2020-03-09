@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.layouts')
+
+@section('title','Simple Board')
+
+@section('content')
+
 
 <h1>Posts</h1>
 
@@ -23,9 +21,5 @@
 
 <a href="/posts/create">New Post</a>
 
+@endsection
 
-
-
-    
-</body>
-</html>
