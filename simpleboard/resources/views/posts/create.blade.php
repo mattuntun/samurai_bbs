@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.layouts')
 
-<form action="/posts" method="post">
-{{csrf_field()}}
-    <input type="text" name="title">
-    <input type="text" name="content">
-    <input type="submit">
-</form>
+@section('title','Simple Board')
 
-</body>
-</html>
+@section('content')
+
+
+    <form action="/posts" method="post">
+    {{csrf_field()}}
+        <input type="text" name="title">
+        <input type="text" name="content">
+        <input type="submit">
+    </form>
+
+@endsection
