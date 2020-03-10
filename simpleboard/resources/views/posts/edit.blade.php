@@ -6,6 +6,17 @@
 
 
     <h1>Editing Post</h1>
+
+    @if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <form action="/posts/{{$post->id}}" method="post">
     {{csrf_field()}}
         <input type="hidden" name="_method" value="PUT">
