@@ -1,4 +1,4 @@
-<nav class="navbar nabver-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar nabver-expand-md navbar-light bg-white shadow-sm fixed-top">
     <a class="navbar-brand" href="/">Simple Board</a>
     <button class="nabvar-toggler"
             type="button"
